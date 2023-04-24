@@ -1,5 +1,5 @@
 {
-    "name": "challenge-tn",
+    "name": "challenge_tn",
     "build": {
         "dockerfile": "Dockerfile",
         "context": ".."
@@ -10,13 +10,12 @@
                 "editor.formatOnSave": true,
                 "python.pythonPath": "/usr/local/bin/python",
                 "python.analysis.extraPaths": [
-                    "./challenge-tn"
+                    "./challenge_tn"
                 ],
                 "python.languageServer": "Pylance",
                 "python.formatting.provider": "black",
                 "python.linting.flake8Enabled": true,
                 "python.linting.pylintEnabled": false,
-                "python.linting.mypyEnabled": true,
                 "[python]": {
                     "editor.rulers": [
                         88
