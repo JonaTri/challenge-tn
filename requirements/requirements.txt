@@ -6,3 +6,4 @@ holidays
 jours-feries-france
 scikit-plot
 lightgbm
+sweetviz
