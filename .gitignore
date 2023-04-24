@@ -1,0 +1,13 @@
+.mypy_cache
+
+*__pycache__/
+
+
+.DS_Store
+.env
+
+# Build
+*dist/
+*build
+*.egg-info
+notebooks/dirty/

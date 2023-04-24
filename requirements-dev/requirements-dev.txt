@@ -1,0 +1,7 @@
+black
+flake8
+invoke
+isort
+mypy
+pip-tools==6.6.0
+jupyterlab

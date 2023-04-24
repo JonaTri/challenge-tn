@@ -1,0 +1,8 @@
+scikit-learn
+numpy
+pandas
+vacances-scolaires-france
+holidays
+jours-feries-france
+scikit-plot
+lightgbm

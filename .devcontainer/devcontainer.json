@@ -1,0 +1,40 @@
+{
+    "name": "challenge-tn",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "python.pythonPath": "/usr/local/bin/python",
+                "python.analysis.extraPaths": [
+                    "./challenge-tn"
+                ],
+                "python.languageServer": "Pylance",
+                "python.formatting.provider": "black",
+                "python.linting.flake8Enabled": true,
+                "python.linting.pylintEnabled": false,
+                "python.linting.mypyEnabled": true,
+                "[python]": {
+                    "editor.rulers": [
+                        88
+                    ],
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": true
+                    }
+                }
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.flake8@2022.5.12361004",
+                "eamodio.gitlens",
+                "njpwerner.autodocstring",
+                "matangover.mypy"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
