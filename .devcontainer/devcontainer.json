@@ -30,8 +30,7 @@
                 "ms-python.vscode-pylance",
                 "ms-python.flake8@2022.5.12361004",
                 "eamodio.gitlens",
-                "njpwerner.autodocstring",
-                "matangover.mypy"
+                "njpwerner.autodocstring"
             ]
         }
     },

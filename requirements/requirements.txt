@@ -1,9 +1,13 @@
 scikit-learn
-numpy
-pandas
+numpy==1.23.1
+pandas==1.5.3
 vacances-scolaires-france
 holidays
 jours-feries-france
 scikit-plot
 lightgbm
 sweetviz
+plotly
+missingno
+statsmodels
+pingouin

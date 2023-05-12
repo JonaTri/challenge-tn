@@ -64,7 +64,7 @@ class FeatureCalendarTransformer(BaseEstimator, TransformerMixin):
         create_hour_features is set to True.
         6. Concatenate the input DataFrame and the generated calendar feature.
         """
-        X = self.initialize_date(X, True)
+        X = self.initialize_date(X, True).reset_index(drop=True)
         self.df_bank_holidays = self.create_french_bank_holidays_df()
         features = np.array(
             [
@@ -217,7 +217,7 @@ class FeatureCalendarTransformer(BaseEstimator, TransformerMixin):
 
     def is_weekend(self) -> np.array:
         """Generate array which is 1 if the date is in the weekend and 0 else for each values of the targeted datetime column"""
-        return np.array((self.dt.dayofweek + 1 >= params["WEEKEND_START"]).astype(int))
+        return np.array((self.dt.dayofweek + 1 > params["WEEKEND_START"]).astype(int))
 
     def week_of_year(self) -> np.array:
         """Generate array with the week of year from each values of the targeted datetime column"""
