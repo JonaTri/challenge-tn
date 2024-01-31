@@ -145,8 +145,8 @@ class SplitTransformer(BaseEstimator, TransformerMixin):
         ]
         train_index, valid_index = split_idxs[np.argmin(size_deltas_list)]
 
-        train_sets = [X.iloc[train_index]]
-        valid_sets = [X.iloc[valid_index]]
+        train_sets = X.iloc[train_index]
+        valid_sets = X.iloc[valid_index]
 
         return {
             "train_sets": train_sets,

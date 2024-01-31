@@ -11,3 +11,5 @@
 *build
 *.egg-info
 notebooks/dirty/
+
+*data/geolocalisation
